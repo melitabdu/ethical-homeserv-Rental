@@ -1,0 +1,106 @@
+.homepage-container {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* top nav bar similar to navbar style */
+.homepage-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #008080 0%, #0077b6 100%);
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* left side (logo + name) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.homepage-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* right side buttons */
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.homepage-btn {
+  background: #fff;
+  color: #008080;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.homepage-btn:hover {
+  background: #e0f2f1;
+}
+
+/* different color hint for provider */
+.provider-btn {
+  background: #fefefe;
+}
+
+.owner-btn {
+  background: #fefefe;
+}
+
+/* content center */
+.homepage-content {
+  text-align: center;
+  margin-top: 80px;
+  color: #333;
+}
+
+.homepage-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.homepage-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .homepage-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .homepage-brand {
+    font-size: 1rem;
+  }
+
+  .homepage-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .homepage-content h1 {
+    font-size: 1.6rem;
+  }
+}
